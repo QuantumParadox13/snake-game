@@ -5,5 +5,7 @@
 public class Fruit extends Snake {
     public Fruit(){
         super();
+
+        //gamer
     }
 }
