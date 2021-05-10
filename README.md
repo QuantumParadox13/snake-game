@@ -2,4 +2,4 @@
 
 AP Computer Science Final Project repository
 
-Only holds experimental window snake game currently.
+Only holds beta snake game currently.
