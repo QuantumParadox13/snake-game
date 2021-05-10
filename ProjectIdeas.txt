@@ -1,0 +1,27 @@
+1. Arcade
+    Snake
+    Pacman
+    Slots
+    Pong
+    Dino Game
+    Frogger
+2. Card Games
+    Poker
+    BlackJack
+    Slap
+    BS
+3. Shooter (category)
+    Topdown view
+    very simple
+4. RPG (category)
+    1. Dungeon Crawler (category)
+        > Procedural generation
+            Infinite
+            Arcadesque 
+        > Zeldaesqe
+            Overworld
+            Finite end goal
+    2. Card Game 
+        > something like that one free epic game
+        > Tarrot Cards
+
