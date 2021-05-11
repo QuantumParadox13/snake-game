@@ -1,3 +1,4 @@
+package csNotes;
 import javax.swing.JOptionPane;
 // import java.awt.*;s
 // import java.awt.event.*;    
