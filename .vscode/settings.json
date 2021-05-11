@@ -2,7 +2,8 @@
     "java.project.sourcePaths": [
         ""
     ], 
+    "explorer.sortOrder": "type",
     "files.exclude": {
-        "**/*.class": true
+        "**/*.class": true,
     }
 }
