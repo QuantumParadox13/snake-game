@@ -11,7 +11,7 @@ public class GameFrame extends JFrame{
 
         panel = new GamePanel(); //creates new panel
         panel.setPreferredSize(new Dimension(800, 1000)); //sets size
-        panel.setBackground(new Color(145,132,18)); //sets background color
+        panel.setBackground(new Color(247,168,184)); //sets background color
         frame.getContentPane().add(panel); //adds panel to frame
     }
 
