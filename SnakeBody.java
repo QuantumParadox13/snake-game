@@ -5,6 +5,5 @@
 public class SnakeBody extends Snake{
     public SnakeBody(){
         super();
-        
     }
 }
