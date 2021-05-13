@@ -22,6 +22,5 @@
             Overworld
             Finite end goal
     2. Card Game (category) 
-        > something like that one free epic game
+        > Hand of Fate
         > Tarrot Cards
-
