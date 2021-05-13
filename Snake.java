@@ -84,7 +84,7 @@ public class Snake {
         return direction;
     }
 
-    public int d(int d){
+    public int d(){
         KeyListener l = new KeyListener() {
             public void keyTyped(KeyEvent ke) {}
             public void keyPressed(KeyEvent ke) {
