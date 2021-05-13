@@ -11,7 +11,7 @@ public class SnakeRunner {
         head.createSnakeWindow(100, 100, 150, 100); // *makes snake head visible
 
         Fruit fruit = new Fruit(); // *makes new fruit
-        fruit.createSnakeWindow(100, 100, rand(width), rand(height)); // *makes fruit visible at random location
+        fruit.createSnakeWindow(100, 100, rand(width-50), rand(height-50)); // *makes fruit visible at random location
 
         ArrayList<SnakeBody> bodies = new ArrayList<SnakeBody>(); // *make new arrayList of snake objects
         bodies.add(new SnakeBody()); // *add first body
