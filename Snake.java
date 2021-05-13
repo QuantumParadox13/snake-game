@@ -126,4 +126,8 @@ public class Snake {
 
         return false;
     }
+
+    public void setColor(int r, int g, int b){
+        m.getContentPane().setBackground(new Color(r, g, b));
+    }
 }
