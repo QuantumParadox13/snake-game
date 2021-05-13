@@ -17,5 +17,7 @@ public class Transparent extends JComponent{
                 System.exit(0);
             }
         });
+        t.getRootPane().putClientProperty("Window.alpha", 0.8f);
+
     }
 }
