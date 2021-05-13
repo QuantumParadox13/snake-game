@@ -25,7 +25,7 @@ public class SnakeRunner {
         while (alive) { // *while snake is alive
             direction = head.d(direction); // *set direction to the direction of the head
             if (head.gotFruit(fruit)) { // *if the head got fruit
-                fruit.changeLocation(rand(width), rand(height)); // *randomize loaction of fruit
+                fruit.changeLocation(rand(width), rand(height)); // *randomize location of fruit
                 int dirX, dirY; // *init dirX and dirY
                 if (bodies.size() == 1) { // *if there is only 1 body
                     dirX = bodies.get(bodies.size() - 1).getLocationX() - head.getLocationX(); // *calculates dirX
@@ -45,7 +45,7 @@ public class SnakeRunner {
                                 bodies.get(bodies.size() - 2).getLocationX(),
                                 bodies.get(bodies.size() - 2).getLocationY() + 50);
                     }
-                } else { // *if horizonatal change
+                } else { // *if horizontal change
                     if (dirX < 0) { // *if going right, make body left
                         bodies.get(bodies.size() - 1).createSnakeWindow(100, 100,
                                 bodies.get(bodies.size() - 2).getLocationX() - 50,
@@ -57,7 +57,7 @@ public class SnakeRunner {
                     }
                 }
 
-                for (int i = bodies.size() - 1; i >= 0; i--) { // *cascaes body windows
+                for (int i = bodies.size() - 1; i >= 0; i--) { // *cascades body windows
                     bodies.get(i).reqFocus();
                 }
                 head.reqFocus(); // *gets focus of head
@@ -72,7 +72,7 @@ public class SnakeRunner {
             head.move(direction); // *moves head
 
             for (int i = 0; i < bodies.size(); i++) { // *for each body
-                if (!head.isAlive(bodies.get(i))) { // *checks each body's collision wiht the head
+                if (!head.isAlive(bodies.get(i))) { // *checks each body's collision with the head
                     alive = false; // *sets alive to false, ending while loop
                     for (int j = 0; j < bodies.size(); j++) {
                         bodies.get(j).setColor(255, 0, 0); // *sets all of the snake to red color
