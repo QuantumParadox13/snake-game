@@ -119,7 +119,8 @@ public class Snake {
     }
 
     public boolean gotFruit(Fruit x){
-        if(x.getLocationX() == posX && x.getLocationY() == posY){
+        if(x.getLocationX() > posX-10 &&  x.getLocationX() < posX+10
+        && x.getLocationY() > posY-10 &&  x.getLocationY() < posY+10){
             return true;
         }
 
