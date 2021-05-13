@@ -23,7 +23,7 @@ public class SnakeRunner {
         head.reqFocus(); // *focuses head
 
         while (alive) { // *while snake is alive
-            direction = head.d(direction); // *set direction to the direction of the head
+            direction = head.d(); // *set direction to the direction of the head
             if (head.gotFruit(fruit)) { // *if the head got fruit
                 fruit.changeLocation(rand(width), rand(height)); // *randomize location of fruit
                 int dirX, dirY; // *init dirX and dirY
