@@ -10,7 +10,7 @@
     BlackJack
     Slap
     BS
-3. Shooter (category)
+3. Shooter
     Topdown view
     very simple
 4. RPG (category)
@@ -21,7 +21,7 @@
         > Zeldaesqe
             Overworld
             Finite end goal
-    2. Card Game 
+    2. Card Game (category) 
         > something like that one free epic game
         > Tarrot Cards
 
