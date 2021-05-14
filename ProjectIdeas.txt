@@ -10,10 +10,7 @@
     BlackJack
     Slap
     BS
-3. Shooter
-    Topdown view
-    very simple
-4. RPG (category)
+3. RPG (category)
     1. Dungeon Crawler (category)
         > Procedural generation
             Infinite
@@ -23,4 +20,4 @@
             Finite end goal
     2. Card Game (category) 
         > Hand of Fate
-        > Tarrot Cards
+        > Tarot Cards

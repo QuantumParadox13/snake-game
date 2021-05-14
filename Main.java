@@ -1,6 +1,6 @@
 public class Main{
     public static void main(String[] args) {
-        // SnakeRunner.start();
-        Transparent.createTransparentWindow();
+        SnakeRunner.start();
+        // Transparent.createTransparentWindow();
     }
 }

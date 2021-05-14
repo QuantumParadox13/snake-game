@@ -20,6 +20,7 @@ public class Snake {
         this.posX = posX;
         this.posY = posY;
         m = new JFrame("hello gamer");// creates frame
+        m.setUndecorated(true);
         m.setSize(sizeX, sizeY);// sets size of frame
         m.addWindowListener(new WindowAdapter() {// when window closes, exit program
             public void windowClosing(WindowEvent windowEvent) {
@@ -38,22 +39,22 @@ public class Snake {
         posY = y;
     }
 
-    public void move(int direction) {
+    public void move(int direction, int snakeSize) {
         switch (direction) {
             case 0:
-                posY += 50;
+                posY += snakeSize;
                 m.setLocation(posX, posY);
                 break;
             case 1:
-                posX -= 50;
+                posX -= snakeSize;
                 m.setLocation(posX, posY);
                 break;
             case 2:
-                posX += 50;
+                posX += snakeSize;
                 m.setLocation(posX, posY);
                 break;
             case 3:
-                posY -= 50;
+                posY -= snakeSize;
                 m.setLocation(posX, posY);
                 break;
         }
@@ -101,6 +102,9 @@ public class Snake {
                     case KeyEvent.VK_DOWN:
                         dir(0);
                         break;
+                    case KeyEvent.VK_C:
+                        dir(-1);
+                        break;
                 }
             }
             public void keyReleased(KeyEvent ke) {}
@@ -118,9 +122,9 @@ public class Snake {
         m.requestFocus();
     }
 
-    public boolean gotFruit(Fruit x){
-        if(x.getLocationX() > posX-10 &&  x.getLocationX() < posX+10
-        && x.getLocationY() > posY-10 &&  x.getLocationY() < posY+10){
+    public boolean gotFruit(Fruit x, int snakeSize){
+        if(x.getLocationX() > posX-(snakeSize-1) &&  x.getLocationX() < posX+(snakeSize-1)
+        && x.getLocationY() > posY-(snakeSize-1) &&  x.getLocationY() < posY+(snakeSize-1)){
             return true;
         }
 
