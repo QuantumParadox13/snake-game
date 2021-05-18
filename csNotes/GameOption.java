@@ -13,7 +13,7 @@ public class GameOption {
 
 
     public void start(){
-        int x = JOptionPane.showConfirmDialog(null, "play le game", null, 0); //shows popup with options (yes, no, cancel)
+        int x = JOptionPane.showConfirmDialog(null, "play the game?", null, 0); //shows popup with options (yes, no, cancel)
         if(x == JOptionPane.YES_OPTION){ // if yes is pressed
             lotf.display(); //run game
         }

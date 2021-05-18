@@ -5,12 +5,14 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class GamePanel extends JPanel implements ActionListener {
+public class GamePanel extends JPanel implements ActionListener , KeyListener{
     private Timer time = new Timer(5, this);
     private int locY;
     private int locX;
+    private Image nilay = new ImageIcon("/home/maxine/AP-CS/Project/snake-games/csNotes/img.png").getImage();
 
     public GamePanel() {
+        addKeyListener(this);
         time.start();
         setFocusable(true);
         setFocusTraversalKeysEnabled(false);
@@ -21,21 +23,33 @@ public class GamePanel extends JPanel implements ActionListener {
 
     public void paintComponent(Graphics g) {
         super.paintComponent(g); // allows g to be painted upon
-        g.fillRect(locX, locY, 50, 50); // makes rectangle at 20, 20 size 50, 50
-        g.drawString("Snake", 390, 250); // say snake
-        g.setColor(Color.BLUE);
-        g.drawLine(390, 250, 428, 250); // make underline
-        for (int i = 0; i < 10; i++) {
-            g.fillRect(locX, locY, 50, 50);
-        }
+        g.drawImage(nilay, 0, 0, null);
+        g.drawRect(locX, locY, 100, 100);
     }
 
     public void actionPerformed(ActionEvent e) {
-        locY += 1;
-        if (locY == 1000) {
-            locY = 0;
-        }
         repaint();
+    }
+
+    public void keyPressed(KeyEvent e) {
+        // TODO Auto-generated method stub
+        int c = e.getKeyCode();
+        if(c==KeyEvent.VK_LEFT){   
+            locX-=5;
+        }
+        if(c==KeyEvent.VK_RIGHT){
+            locX+=5;
+        }
+    }
+
+    public void keyReleased(KeyEvent e) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    public void keyTyped(KeyEvent e) {
+        // TODO Auto-generated method stub
+        
     }
 
 }
